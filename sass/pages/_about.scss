@@ -1,0 +1,81 @@
+#about-body {
+  h1 {
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  main {
+    padding-bottom: 900px;
+    @media (min-width: 968px) {
+      padding-bottom: 500px;
+    }
+  }
+
+  .wave-top,
+  .wave-bottom {
+    background-image: url("/assets/wave_2_w.svg");
+    z-index: 1;
+    position: relative;
+  }
+
+  .photo1 {
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
+
+  .about-container1,
+  .about-container2 {
+    .headline1,
+    .headline2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-weight: 300;
+      line-height: 1.8rem;
+      margin-bottom: 50px;
+    }
+
+    background-color: white;
+
+    padding: 70px 10vw;
+
+    @media (min-width: 768px) {
+      padding: 70px 30vw 70px 15vw;
+
+      .headline1,
+      .headline2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .about-container2 {
+    display: block;
+
+    padding: 70px 10vw;
+
+    div {
+      flex-basis: 50%;
+    }
+
+    img {
+      padding: 70px;
+    }
+
+    @media (min-width: 1368px) {
+      padding: 70px 15vw 70px 15vw;
+
+      display: flex;
+
+      img {
+        padding: 20px;
+        width: 100%;
+        margin: 50px;
+        height: auto;
+      }
+    }
+  }
+}

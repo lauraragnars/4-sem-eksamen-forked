@@ -1,0 +1,147 @@
+#map-body {
+  h1 {
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .location-info {
+    color: white;
+    font-size: 1rem;
+    // padding-top: 150px;
+    // padding-bottom: 50px;
+    padding-left: 5px;
+    letter-spacing: 1pxpx;
+    margin-left: 10vw;
+    font-weight: 300;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      text-align: left;
+      margin-left: 15vw;
+
+      // padding: 90px 0 20px 0;
+    }
+  }
+
+  .st0 {
+    fill: #dc88ff;
+  }
+  .st1 {
+    fill: #f2c0ff;
+  }
+  .st2 {
+    fill: #ffff00;
+  }
+  .st3 {
+    fill: none;
+    stroke: #ffff00;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  .st4 {
+    fill: #0037ff;
+  }
+  .st5 {
+    fill: none;
+    stroke: #0037ff;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  .st6 {
+    fill: #ff00ff;
+  }
+  .st7 {
+    fill: none;
+    stroke: #ff00ff;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  .st8 {
+    fill: #1dff78;
+  }
+  .st9 {
+    fill: none;
+    stroke: #1dff78;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  .st10 {
+    fill: #ff9210;
+  }
+  .st11 {
+    fill: none;
+    stroke: #ff9210;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  .st12 {
+    fill: #ff0055;
+  }
+  .st13 {
+    fill: none;
+    stroke: #ff0055;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+
+  circle {
+    transition: 0.3s;
+  }
+
+  circle:hover {
+    fill: pink;
+    transition: 0.3s;
+  }
+
+  .circles {
+    // display: flex;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    p {
+      color: white;
+      font-family: fenwick, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 0.8rem;
+      padding-top: 0.5rem;
+    }
+
+    .flex {
+      display: flex;
+      margin-right: 50px;
+      margin-bottom: 10px;
+
+      div {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 2px solid rgb(255, 255, 255);
+      }
+    }
+
+    .food {
+      background-color: #1dff78;
+    }
+    .bar {
+      background-color: #ff9210;
+    }
+
+    .scene {
+      background-color: #ff00ff;
+    }
+
+    .toilets {
+      background-color: #0037ff;
+    }
+
+    .entrance {
+      background-color: #ffff00;
+    }
+  }
+}

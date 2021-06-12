@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1190.6 841.9" style="enable-background:new 0 0 1190.6 841.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DC88FF;}
+	.st1{fill:#F2C0FF;}
+	.st2{fill:#FF00FF;}
+	.st3{fill:none;stroke:#FF00FF;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g id="map">
+	<polygon class="st0" points="50.8,574.2 351,608.3 1106.8,344.8 1033.1,159.3 370.5,117.5 320.5,230.1 237.7,236.6 	"/>
+	
+		<image style="overflow:visible;" width="2000" height="1156" id="refshaleoen_x5F_map.psd" xlink:href="refshaleoen_map.png"  transform="matrix(0.5816 0 0 0.5816 21.8973 73.6454)">
+	</image>
+	<polygon class="st1" points="50.8,574.2 50.8,619.9 354,657.5 1106.8,394.3 1106.8,344.8 351,608.3 	"/>
+</g>
+<g id="pins">
+	<g>
+		<circle class="st2" cx="328.5" cy="470.7" r="18.5"/>
+		<line class="st3" x1="328.5" y1="516.1" x2="328.5" y2="489.2"/>
+	</g>
+	<g>
+		<circle class="st2" cx="464.3" cy="399.7" r="18.5"/>
+		<line class="st3" x1="464.3" y1="445.1" x2="464.3" y2="418.3"/>
+	</g>
+	<g>
+		<circle class="st2" cx="726.5" cy="339.6" r="18.5"/>
+		<line class="st3" x1="726.5" y1="385" x2="726.5" y2="358.1"/>
+	</g>
+	<g>
+		<circle class="st2" cx="570.4" cy="317.5" r="18.5"/>
+		<line class="st3" x1="570.4" y1="362.9" x2="570.4" y2="336"/>
+	</g>
+	<g>
+		<circle class="st2" cx="512.3" cy="187.2" r="18.5"/>
+		<line class="st3" x1="512.3" y1="232.6" x2="512.3" y2="205.7"/>
+	</g>
+	<g>
+		<circle class="st2" cx="352.5" cy="272.1" r="18.5"/>
+		<line class="st3" x1="352.5" y1="317.5" x2="352.5" y2="290.6"/>
+	</g>
+</g>
+</svg>

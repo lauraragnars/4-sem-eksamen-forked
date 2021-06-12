@@ -1,0 +1,109 @@
+footer {
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  bottom: 0;
+
+  background-image: url("/assets/footer_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 110%;
+
+  @media (max-width: 968px) {
+    height: 800px;
+    background-size: cover;
+
+    .footer-flex {
+      flex-wrap: wrap;
+
+      .footer-item {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+      }
+
+      .footer-logo {
+        position: absolute;
+        right: 10vw;
+        top: 450px;
+      }
+
+      .footer-contact {
+        margin-top: -70px;
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .footer-flex {
+    width: 100vw;
+    padding: 0 10vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    top: 200px;
+
+    @media (min-width: 968px) {
+      padding: 0 70px;
+    }
+  }
+
+  a {
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+  }
+
+  li {
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .socials a {
+    text-decoration: none;
+    border: none;
+  }
+
+  .images img {
+    height: 40px;
+    margin: 10px;
+    width: auto;
+  }
+
+  .tuborg img {
+    width: 80px;
+    padding-top: 10px;
+    height: auto;
+  }
+
+  .kbh img {
+    height: 50px;
+  }
+
+  .footer-logo {
+    // position: relative;
+    // bottom: -220px;
+    // left: 60px;
+    img {
+      width: 90px;
+    }
+  }
+}

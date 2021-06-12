@@ -1,0 +1,146 @@
+@import "../base/variables";
+
+#program-body {
+  h1 {
+    color: white;
+    margin-bottom: 60px;
+  }
+
+  .program-container {
+    margin-bottom: 150px;
+  }
+
+  main {
+    padding-bottom: 400px;
+    @media (min-width: 968px) {
+      padding-bottom: 330px;
+    }
+  }
+
+  .program-module-container {
+    margin-bottom: -340px;
+
+    &:nth-child(even) {
+      .wave-top {
+        background-image: url("/assets/wave_top.svg");
+      }
+
+      // .wave-top,
+      // .wave-bottom {
+      //   background-image: url("/assets/wave_pink.svg");
+      // }
+
+      .program-module {
+        background-color: white;
+      }
+    }
+
+    &:nth-child(odd) {
+      .wave-top {
+        background-image: url("/assets/wave_pink.svg");
+      }
+
+      .program-module {
+        background-color: $light-pink;
+      }
+    }
+
+    &:nth-child(5) {
+      .wave-bottom {
+        background-image: url("/assets/wave_pink.svg");
+      }
+      margin-bottom: 0px;
+
+      @media (min-width: 968px) {
+        margin-bottom: -340px;
+      }
+    }
+  }
+
+  .program-module {
+    width: 100vw;
+    padding: 10vw 10vw 300px 10vw;
+    // margin-bottom: 50px;
+    color: black;
+
+    @media (min-width: 768px) {
+      width: 100vw;
+      padding: 70px 15vw 300px 15vw;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .day {
+      width: 35vw;
+      font-family: fenwick, sans-serif;
+
+      font-weight: 300;
+      font-style: normal;
+      flex-basis: 100%;
+      margin-top: 20px;
+
+      @media (min-width: 768px) {
+        padding-right: 40px;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        font-weight: 300;
+        margin-top: 20px;
+      }
+
+      li {
+        font-size: 0.8rem;
+
+        margin-bottom: 5px;
+      }
+
+      .artists li {
+        border-bottom: 1px solid black;
+        padding-bottom: 1px;
+        // transition: color 0.3s;
+
+        // &:hover {
+        //   color: rgb(139, 139, 139);
+        //   transition: color 0.3s;
+        // }
+      }
+
+      .time li {
+        border-bottom: 1px solid transparent;
+        padding-bottom: 1px;
+      }
+    }
+
+    .scene-container {
+      flex-wrap: wrap;
+
+      @media (min-width: 900px) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .time {
+      text-align: right;
+    }
+
+    .scene-title {
+      font-family: fenwick, sans-serif;
+      font-size: 2rem;
+
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+@import "../base/variables";
+
+.burger-menu-svg {
+  mix-blend-mode: difference;
+  width: 3.2rem;
+  position: fixed;
+  right: 1.2rem;
+  top: 1.2rem;
+  transition: 0.3s ease-out;
+  z-index: 3;
+
+  @media (min-width: 768px) {
+    width: 4rem;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+}
+
+.header-text {
+  position: fixed;
+  top: 36px;
+  left: 90px;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 0.8rem;
+  font-family: fenwick, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 0.45rem;
+  z-index: 5;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    top: 45px;
+    left: 105px;
+    font-size: 1rem;
+    line-height: 0.6rem;
+  }
+}
+
+.burger-nav {
+  position: fixed;
+  z-index: 2;
+  transition: all 0.3s;
+  background-color: $light-pink;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 150px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: 2400px) {
+    padding-top: 150px;
+  }
+
+  li {
+    display: block;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .selected {
+    color: black;
+  }
+
+  a {
+    display: none;
+    text-decoration: none;
+    color: $white;
+    font-family: fenwick, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    transition: 0.3s;
+    line-height: 50px;
+    display: inline-block;
+    // letter-spacing: -2px;
+
+    @media (min-width: 768px) {
+      font-size: 3.4rem;
+      line-height: 70px;
+    }
+    @media (min-width: 2400px) {
+      font-size: 5rem;
+      line-height: 100px;
+    }
+
+    &:hover {
+      color: $black;
+      transition: 0.3s;
+    }
+  }
+}
+
+// styles that are only applied when burge menu is open
+header .open {
+  .burger-nav {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.3s;
+  }
+}
+
+.burger-menu-text {
+  font-family: fenwick, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  right: 1.8rem;
+  top: 2.6rem;
+  z-index: 4;
+  font-size: 0.6rem;
+  transition: 0.3s;
+  color: $white;
+  mix-blend-mode: difference;
+
+  @media (min-width: 768px) {
+    right: 2.3rem;
+    top: 3.3rem;
+    font-size: 0.7rem;
+  }
+}
+
+.burger-menu-icon {
+  cursor: pointer;
+}
+
+.header-logo {
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 0.4rem;
+  left: 1.5rem;
+  z-index: 5;
+
+  @media (min-width: 768px) {
+    top: 0.5rem;
+    left: 1.5rem;
+  }
+
+  .b-canvas {
+    width: 50px !important;
+    height: auto !important;
+
+    @media (min-width: 768px) {
+      width: 60px !important;
+      height: auto !important;
+    }
+  }
+}

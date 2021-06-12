@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/sxe1kwu.css" />
+    <link rel="stylesheet" href="../sass/main.scss" />
+    <script crossorigin src="https://raw.githack.com/bradley/Blotter/master/build/blotter.min.js"></script>
+    <script crossorigin src="https://raw.githack.com/bradley/Blotter/master/build/materials/liquidDistortMaterial.js"></script>
+    <script crossorigin src="https://raw.githack.com/bradley/Blotter/master/build/materials/rollingDistortMaterial.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#001bff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:title" content="Distortion Ø" />
+    <meta property="og:description" content="A two day electronic music festival at Refshaleøen in Copenhagen" />
+    <meta property="og:image" content="https://4-sem-eksamen.lauraragnars.dk/assets/disotrion_0.jpg" />
+    <meta property="og:url" content="https://4-sem-eksamen.lauraragnars.dk" />
+
+    <meta name="twitter:title" content="Distortion Ø" />
+    <meta name="twitter:description" content="A two day electronic music festival at Refshaleøen in Copenhagen" />
+    <meta name="twitter:image" content="https://4-sem-eksamen.lauraragnars.dk/assets/disotrion_0.jpg" />
+    <meta name="twitter:card" content="distortion_o_image" />
+
+    <meta name="description" content="A two day electronic music festival at Refshaleøen in Copenhagen" />
+    <title>Distortion Ø</title>
+  </head>
+  <body>
+    <div id="index-body" class="body-container">
+      <header>
+        <a class="cursor-link-big" href="index.html">
+          <div class="header-logo"></div>
+        </a>
+        <h3 class="header-text">Refshaleøen <br /><br />June 4–5</h3>
+
+        <div class="burger-menu">
+          <div class="burger-menu-icon cursor-link">
+            <img class="burger-menu-svg" src="/assets/menu.svg" alt="Burger menu icon" />
+            <h3 class="burger-menu-text">Menu</h3>
+          </div>
+          <nav class="burger-nav">
+            <ul>
+              <li>
+                <a class="cursor-link-big selected" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="cursor-link-big" href="artists.html">Artists</a>
+              </li>
+              <li>
+                <a class="cursor-link-big" href="tickets.html">Tickets</a>
+              </li>
+              <li>
+                <a class="cursor-link-big" href="program.html">Program</a>
+              </li>
+              <li>
+                <a class="cursor-link-big" href="map.html">Festival map</a>
+              </li>
+              <li><a class="cursor-link-big" href="about.html">About</a></li>
+              <li></li>
+              <li><a class="cursor-link-big" href="merch.html">Merch</a></li>
+              <li>
+                <a class="cursor-link-big" href="practical-info.html">Practical Info</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- here so that parcel renders these things -->
+      <a class="hide" href="/fonts/Pilowlava-Regular.woff"></a>
+      <a class="hide" href="/fonts/Pilowlava-Regular.woff2"></a>
+      <a class="hide" href="artist.html"></a>
+
+      <main>
+        <section class="splash-text"></section>
+
+        <section class="section-wrapper cta-section">
+          <a class="cursor-link-big" href="tickets.html">
+            <div class="blob-1">
+              <p>Buy <br />tickets</p>
+            </div>
+          </a>
+          <a class="cursor-link-big" href="map.html">
+            <div class="blob-2">
+              <p>Festival <br />map</p>
+            </div>
+          </a>
+        </section>
+        <div id="headliners"></div>
+
+        <section class="pink-banner">
+          <div class="wave-top"></div>
+          <div class="about-section">
+            <h4 class="about-text-header"></h4>
+            <p class="about-text"></p>
+            <a class="button cursor-link" href="about.html">Read more</a>
+          </div>
+          <div class="wave-bottom"></div>
+        </section>
+
+        <section class="countdown-section">
+          <div class="countdown">
+            <div>
+              <p class="days"></p>
+              <p class="countdown-info">days</p>
+            </div>
+            <div>
+              <p class="hours"></p>
+              <p class="countdown-info">hours</p>
+            </div>
+            <div>
+              <p class="mins"></p>
+              <p class="countdown-info">minutes</p>
+            </div>
+            <div>
+              <p class="secs"></p>
+              <p class="countdown-info">seconds</p>
+            </div>
+          </div>
+          <div class="countdown-buttons">
+            <div>
+              <a class="button cursor-link" href="/assets/distorton-o-event.ics">Add to calender</a>
+            </div>
+            <div>
+              <a
+                class="button cursor-link"
+                target="_blank"
+                rel="noopener"
+                href="https://www.facebook.com/events/distortion/distortion-ø-2021/764130010992570/"
+                >Facebook event</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="video-section">
+          <div class="video-container">
+            <video playsinline autoplay muted loop>
+              <source src="/assets/distortion_o_recap.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </section>
+      </main>
+      <div class="custom-cursor"></div>
+
+      <footer>
+        <div class="footer-content flex">
+          <div class="footer-flex flex">
+            <div class="footer-item">
+              <ul>
+                <li><a class="cursor-link" href="#">Volunteer</a></li>
+                <li><a class="cursor-link" href="#">Press </a></li>
+                <li><a class="cursor-link" href="#">Privacy policy</a></li>
+                <li>
+                  <a class="cursor-link" href="#">Terms and conditions</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-item footer-contact">
+              <ul>
+                <li class="hidden">p</li>
+                <li class="hidden">p</li>
+                <li>
+                  <a class="cursor-link" href="mailto:contact@distortiono.com">contact@distortiono.com</a>
+                </li>
+                <li>Distortion Ø 2021 &copy;</li>
+              </ul>
+            </div>
+
+            <div class="socials footer-item">
+              <p>Follow us</p>
+              <div class="images flex">
+                <div class="facebook">
+                  <a href="https://www.facebook.com/cphdistortion" target="_blank" rel="noopener" class="cursor-link">
+                    <img src="/assets/facebook.png" alt="Facebook logo" />
+                  </a>
+                </div>
+                <div class="instagram">
+                  <a href="https://www.instagram.com/cphdistortion/?hl=en" target="_blank" rel="noopener" class="cursor-link">
+                    <img src="/assets/instagram.png" alt="Instagram logo" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="sponsors footer-item">
+              <p>Sponsored by</p>
+              <div class="images flex">
+                <div class="kbh">
+                  <img src="/assets/kbh_logo.svg" alt="Københavns kommune logo" />
+                </div>
+                <div class="tuborg">
+                  <img src="/assets/tuborg_logo.svg" alt="Tuborg logo" />
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-logo">
+              <img src="/assets/distortion_logo.png" alt="Distortion logo" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

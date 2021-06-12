@@ -1,0 +1,130 @@
+@import "../base/variables";
+
+#artists-body {
+  #menu {
+    fill: black;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .white-banner-content {
+    background-color: white;
+    padding: 40px 0 100px 0;
+    width: 100vw;
+    height: auto;
+    // opacity: 0.9;
+    // overflow-y: scroll;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    button {
+      flex-basis: 80%;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      button {
+        flex-basis: auto;
+      }
+    }
+  }
+
+  .wave-top,
+  .wave-bottom {
+    background-image: url("/assets/wave_2_w.svg");
+  }
+
+  // main {
+  //   margin-bottom: 500px;
+  //   @media (min-width: 968px) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  .wave-bottom {
+    margin-bottom: 150px;
+  }
+
+  .search-box {
+    width: 80%;
+    margin: 10px auto;
+
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+    input {
+      padding: 10px 20px;
+      width: 100%;
+      border: 1px solid black;
+      font-family: fenwick, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      font-style: normal;
+    }
+  }
+
+  button {
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    margin: 0 10px;
+    min-width: 120px;
+    transition: 0.3s;
+  }
+
+  .selected-button {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+  }
+
+  button:active {
+    background-color: black;
+    color: white;
+  }
+
+  #all-artists {
+    text-align: center;
+    margin: 50px 0;
+    padding: 0;
+    // overflow-y: scroll;
+    height: auto;
+    li {
+      font-family: fenwick, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: normal;
+      margin: 10px 0;
+      transition: color 0.3s;
+
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+
+        // &:hover {
+        //   color: rgb(139, 139, 139);
+        //   transition: color 0.3s;
+        // }
+      }
+    }
+
+    .headliner {
+      font-size: 2rem;
+
+      @media (min-width: 768px) {
+        font-size: 4rem;
+      }
+    }
+  }
+}

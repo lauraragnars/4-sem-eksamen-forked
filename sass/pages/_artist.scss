@@ -1,0 +1,141 @@
+@import "../base/variables";
+
+#artist-body {
+  .artist-photo {
+    height: 60vw;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 900px) {
+      height: 30vw;
+      width: 35vw;
+    }
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  .white-banner-top {
+    background-image: url("/assets/white_banner_top.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100vw;
+    height: 3vw;
+  }
+
+  .white-banner-bottom {
+    background-image: url("/assets/white_banner_bottom.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100vw;
+    height: 5vw;
+  }
+
+  .white-banner-content {
+    background-color: white;
+    padding: 20px 0 100px 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  // main {
+  //   margin-bottom: 500px;
+  //   @media (min-width: 968px) {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  .section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: 900px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .back-button {
+    margin-left: 10vw;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      margin-left: 15vw;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-family: fenwick, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+  .wave-top,
+  .wave-bottom {
+    background-image: url("/assets/wave_2_w.svg");
+  }
+
+  .wave-bottom {
+    margin-bottom: 150px;
+  }
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 16%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  /* Then style the iframe to fit in the container div with full height and width */
+  .spotify-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .artist-text {
+    margin-left: 0;
+    font-family: fenwick, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+
+    @media (min-width: 900px) {
+      margin-left: 30px;
+      margin-top: 0;
+    }
+
+    .artist-name {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .artist-info {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .some-text {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .artist-some {
+    display: flex;
+    img {
+      height: 40px;
+      width: auto;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+#practical-info-body {
+  .main-header {
+    color: white;
+    padding-bottom: 5px;
+  }
+
+  .practical-info-main {
+    margin-bottom: 600px;
+
+    @media (min-width: 968px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  .info-text {
+    font-family: fenwick, sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    padding: 0 0 50px 0;
+    margin-left: 10vw;
+
+    @media (min-width: 768px) {
+      font-size: 0.9rem;
+      text-align: left;
+      margin-left: 15vw;
+      padding: 0 0 50px 0;
+    }
+  }
+
+  details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+  }
+
+  @keyframes open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  details summary::marker {
+    display: none;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  // details {
+  //   &:last-child {
+  //     summary {
+  //       border-bottom: 2px solid white;
+  //     }
+
+  //   }
+  // }
+
+  details summary {
+    width: 100%;
+    padding: 0.8rem 0;
+    border-top: 2px solid white;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 300;
+    list-style: none;
+    transition: 0.3s;
+  }
+
+  details summary:after {
+    content: "+";
+    color: white;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transition: 0.3s;
+  }
+  details[open] summary:after {
+    transform: rotate(45deg);
+    font-size: 2rem;
+  }
+  details summary {
+    outline: 0;
+    color: white;
+    font-family: fenwick, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  details p {
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.11);
+    backdrop-filter: blur(10px);
+
+    font-family: fenwick, sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-style: normal;
+  }
+}

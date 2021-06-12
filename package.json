@@ -1,0 +1,28 @@
+{
+  "name": "distortion",
+  "version": "1.0.0",
+  "description": "https://quirky-benz-58faf7.netlify.app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deletedist": "rm -rf ./dist/*",
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "copy": "cp .htaccess dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauraragnars/4-sem-eksamen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauraragnars/4-sem-eksamen/issues"
+  },
+  "homepage": "https://github.com/lauraragnars/4-sem-eksamen#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
+    "@parcel/transformer-webmanifest": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.32.13"
+  }
+}

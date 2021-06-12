@@ -1,0 +1,70 @@
+@import "../base/variables";
+
+.body-container {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  // overflow-x: hidden;
+}
+
+#index-body {
+  background-color: $color-background-1;
+  //background-color: $color-background-7;
+  background-position-x: center;
+
+  background-image: url("/background_images/glitch_6_c.jpg");
+
+  @media (min-width: 768px) {
+    background-position-x: left;
+  }
+}
+
+#program-body {
+  background-color: $color-background-2;
+  background-image: url("/background_images/glitch_13.jpg");
+}
+
+#merch-body {
+  background-color: $color-background-3;
+  background-image: url("/background_images/glitch_merch.jpg");
+}
+
+#about-body {
+  background-color: $color-background-3;
+  background-image: url("/background_images/glitch_merch.jpg");
+}
+
+#practical-info-body {
+  background-color: $color-background-4;
+  background-image: url("/background_images/glitch_13.jpg");
+}
+
+#artists-body {
+  background-color: $color-background-5;
+  background-image: url("/background_images/glitch_1.png");
+  background-position-x: center;
+}
+
+#artist-body {
+  background-color: $color-background-5;
+  background-image: url("/background_images/glitch_1.png");
+  background-position-x: center;
+}
+
+#tickets-body {
+  background-color: $color-background-5;
+  background-image: url("/background_images/glitch_1.png");
+  background-position-x: center;
+  // background-color: $color-background-6;
+  // background-image: url("/background_images/glitch_1.jpg");
+  // background-size: 150%;
+  // background-position-x: center;
+}
+
+#map-body {
+  background-color: $color-background-7;
+  background-image: url("/background_images/glitch_6_c.jpg");
+}
