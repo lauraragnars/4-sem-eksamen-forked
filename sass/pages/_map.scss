@@ -5,6 +5,112 @@
     padding-bottom: 0;
   }
 
+  main {
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid white;
+      z-index: 3;
+    }
+  }
+
+  .circles {
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      .category {
+        flex-basis: 100px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .popup {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    background-color: #f2c0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    opacity: 1;
+    pointer-events: all;
+
+    .currentlyplaying {
+      display: flex;
+      padding: 5px 0;
+    }
+
+    .redcircle {
+      height: 20px;
+      width: 20px;
+      background-color: red;
+      border-radius: 50%;
+      margin-right: 7px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .close {
+      float: right;
+      font-size: 1.2rem;
+      padding-left: 10px;
+    }
+
+    .info {
+      font-size: 0.9rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+  }
+
+  .hide {
+    transition: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .popup .hideinfo {
+    display: none;
+  }
+
+  .svg {
+    width: 100%;
+    padding-right: 5vw;
+
+    @media (max-width: 1000px) {
+      margin-top: 20px;
+      min-height: 70vh;
+      overflow: scroll;
+    }
+    // margin: 0px auto 100px auto;
+
+    // min-height: 90vh;
+    // overflow: scroll;
+
+    // #pins {
+    //   path:hover {
+    //     animation: bounce 2s ease 1;
+    //   }
+    // }
+  }
+
+  .bounce-ani {
+    animation: bounce 1.5s ease infinite;
+  }
+
+  .bounce-ani-once {
+    animation: bounce 1.5s ease 1;
+  }
+
+  // svg {
+  //   width: 100vw;
+  //   height: 90vh;
+  //   overflow: scroll;
+  // }
+
   .location-info {
     color: white;
     font-size: 1rem;
@@ -14,7 +120,11 @@
     letter-spacing: 1pxpx;
     margin-left: 10vw;
     font-weight: 300;
-    margin-bottom: 40px;
+
+    &:nth-child(3) {
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
 
     @media (min-width: 768px) {
       font-size: 1rem;
@@ -25,82 +135,24 @@
     }
   }
 
-  .st0 {
-    fill: #dc88ff;
-  }
-  .st1 {
-    fill: #f2c0ff;
-  }
-  .st2 {
-    fill: #ffff00;
-  }
-  .st3 {
-    fill: none;
-    stroke: #ffff00;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-  }
-  .st4 {
-    fill: #0037ff;
-  }
-  .st5 {
-    fill: none;
-    stroke: #0037ff;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-  }
-  .st6 {
-    fill: #ff00ff;
-  }
-  .st7 {
-    fill: none;
-    stroke: #ff00ff;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-  }
-  .st8 {
-    fill: #1dff78;
-  }
-  .st9 {
-    fill: none;
-    stroke: #1dff78;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-  }
-  .st10 {
-    fill: #ff9210;
-  }
-  .st11 {
-    fill: none;
-    stroke: #ff9210;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-  }
-  .st12 {
-    fill: #ff0055;
-  }
-  .st13 {
-    fill: none;
-    stroke: #ff0055;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-  }
+  .main-flex {
+    display: flex;
+    // padding: 5vw;
+    margin-bottom: 100px;
+    margin-top: 40px;
 
-  circle {
-    transition: 0.3s;
-  }
-
-  circle:hover {
-    fill: pink;
-    transition: 0.3s;
+    @media (max-width: 1000px) {
+      display: block;
+    }
   }
 
   .circles {
+    padding-left: 15vw;
     // display: flex;
 
-    @media (min-width: 768px) {
-      display: flex;
-    }
+    // @media (min-width: 768px) {
+    //   display: flex;
+    // }
 
     p {
       color: white;
@@ -113,8 +165,12 @@
 
     .flex {
       display: flex;
-      margin-right: 50px;
+      // margin-right: 50px;
       margin-bottom: 10px;
+
+      p {
+        white-space: nowrap;
+      }
 
       div {
         height: 30px;
@@ -126,22 +182,72 @@
     }
 
     .food {
-      background-color: #1dff78;
+      background-color: #1bdb1f;
     }
-    .bar {
-      background-color: #ff9210;
+    .bars {
+      background-color: #9129ff;
     }
 
-    .scene {
-      background-color: #ff00ff;
+    .stages {
+      background-color: #f0f;
     }
 
     .toilets {
-      background-color: #0037ff;
+      background-color: #1240ff;
     }
 
     .entrance {
-      background-color: #ffff00;
+      background-color: #f72c1c;
+    }
+
+    .firstaid {
+      background-color: #09a64d;
+    }
+
+    .ticketoffice {
+      background-color: #f98f38;
+    }
+
+    .busstop {
+      background-color: #f7f757;
+    }
+
+    .bank {
+      background-color: #49dafc;
+    }
+
+    .merch {
+      background-color: #191919;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
     }
   }
 }
