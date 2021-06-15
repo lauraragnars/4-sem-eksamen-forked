@@ -76,15 +76,40 @@
     display: none;
   }
 
+  // .mobilesvg {
+  //   display: none;
+
+  //   @media (max-width: 1000px) {
+  //     display: block;
+  //     object-fit: contain;
+  //     height: 80vh;
+  //     width: 100vw;
+  //     overflow: scroll;
+
+  //     img {
+  //       width: 110vw;
+  //     }
+  //   }
+  // }
+  .svg-container {
+    width: 100%;
+    @media (max-width: 1000px) {
+      overflow: scroll;
+      margin-top: 20px;
+    }
+  }
   .svg {
     width: 100%;
     padding-right: 5vw;
 
     @media (max-width: 1000px) {
-      margin-top: 20px;
-      min-height: 70vh;
-      overflow: scroll;
+      width: 200vw;
+      // height: 110vh;
     }
+
+    // @media (max-width: 1000px) {
+    //   display: none;
+    // }
     // margin: 0px auto 100px auto;
 
     // min-height: 90vh;
