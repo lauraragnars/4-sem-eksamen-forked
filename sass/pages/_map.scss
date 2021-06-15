@@ -64,6 +64,25 @@
       margin-top: 10px;
       font-weight: 300;
     }
+
+    @media (max-width: 1000px) {
+      max-width: 140px;
+
+      .title {
+        font-size: 0.9rem;
+      }
+      .close {
+        font-size: 1rem;
+      }
+
+      .info {
+        font-size: 0.7rem;
+      }
+
+      .currentlyplaying {
+        font-size: 0.8rem;
+      }
+    }
   }
 
   .hide {
